@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="http://realhack.lk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RealHack 2018" />
+    <meta property="og:description" content="Inter University Hackathon organized by Software Engineering Students' Association and IEEE Student Branch of University of Kelaniya with Pearson Lanka PVT LTD." />
+    <meta property="og:image" content="https://nuwan94.github.io/RealHackv2/images/logo.png" />
+
+    <title>KSSL 2018</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- <meta http-equiv="Expires" content="1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/formatting.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/animated.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/morphext.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <style>
+        .gradientBackground{
+            background: linear-gradient(270deg, #471543, #000000, #471145, #000000);
+            background-size: 800% 800%;
+            -webkit-animation: gradientBackground 4s ease infinite;
+            -moz-animation: gradientBackground 4s ease infinite;
+            animation: gradientBackground 4s ease infinite;
+
+            -webkit-animation: gradientBackground 4s ease infinite;
+            animation: gradientBackground 4s ease infinite;
+        }
+
+        @-webkit-keyframes gradientBackground {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes gradientBackground { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68457027-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-68457027-4');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Load Twitter SDK for JavaScript -->
+    <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+
+    <!-- FB Customer Chat Widget -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="235087650506664" theme-color="#aa5dab">
+    </div>
+
+    <!-- Start PreLoader Section-->
+    <div class="pre-loader">
+        <div class="loader-container">
+            <div class="spin-cones"></div>
+        </div>
+    </div>
+    <!-- End PreLoader Section-->
+
+    <!-- Start Nav Section -->
+    <nav id="main-nav" class="nav-down nav-fixed">
+        <div id="nav-color" class="theme-purple"></div>
+        <div class="nav-wrapper">
+            <a class="brand-logo no-bg" data-scroll-nav="1" href="#">
+                <img class="responsive-img logo" src="images/logo-top.png" alt="">
+            </a>
+            <!-- Main Menu Hamburger Icon for Mobile And Screen Width less than 993px -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <div class="hamburger-icon" id="hamburger-menu">
+                    <svg viewBox="0 0 800 600">
+                        <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                            class="top"></path>
+                        <path d="M300,320 L540,320" class="middle"></path>
+                        <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                            class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Main Menu Content -->
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="waves-effect waves-light" data-scroll-nav="1" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" data-scroll-nav="2" href="#">Teams</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" data-scroll-nav="3" href="#">Schedule</a>
+                </li>
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                        </div>
+                        <img class='sponser-logo' src="images/logo.png">
+                    </div>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" data-scroll-nav="1" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" data-scroll-nav="2" href="#">Teams</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" data-scroll-nav="3" href="#">Schedule</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Nav Section-->
+
+    <!-- Start Header Section-->
+    <header id="main-header" class="" data-scroll-index="1">
+        <div id="particles-js"></div>
+        <div class="header-section container">
+            <div class="header-text">
+                <div>
+                    <div class="title" data-aos="">
+                        <h1 class="title-link"><img src="images/logo.png"></h1>
+                    </div>
+                    <!--h4>15<sup>th</sup> & 16<sup>th</sup> October 2018</h4>
+                    <h5>Dharmaloka Hall, University of Kelaniya</h5-->
+
+                    <h4><br> 30<sup>th</sup> December 2018</h4>
+                    <h5>At University Park</h5>
+                    <div id="count-clock" class="hideonTime count-clock"></div>
+                    <div class='showonTime' ><span style="color: #880e4f;font-size: 28px;font-weight: bold;">12th Edition of King's Science Supper League</span> <span><br></span></div>
+                    <p class="desc hideonTime">Organized by Software Engineering Students' Association <br>and IEEE Student Branch of University of Kelaniya.</p>
+                    <!-- <p class="desc organizer">
+                        <img src="images/ieeeuok-logo.png" />
+                        <img src="images/sesauok-logo.png" />
+                    </p> -->
+                </div>
+            </div>
+            <div class="text-anim-header center-align m-b-3" >
+                <div style="text-align: center">
+                        <h3 class="">Let the <span id="js-rotating" class="text-red">Battle</span>
+                            <br>Begin!!</h3><br>
+                </div>
+                
+                <a data-scroll-nav="5"  class="hideonTime regbtn theme-red trans-05"></a>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header Section-->
+
+    <!-- Start About Section-->
+    <section id="about-us"  data-scroll-index="2" >
+        <div class="main-section center-align white-text gradientBackground" style="padding-bottom: 40px">
+            <div class="container" >
+                <h4 class="section-header m-t-3 p-b-2" style="margin-bottom: 10px">Teams</h4>
+                <div class="row">
+                    <div class="col s12 l4" data-aos='fade-up' data-aos-delay="100">
+                        <div class="row">
+                                    <img class="sponser-logo m-b-1" src="images/Knightriders logo-1.png" alt="">
+                        </div>
+                        <h5 class="p-t-1">Shamali Knightriders</h5>
+                        <p class="p-b-2">2014 Sc1</p>
+                    </div>
+                    <div class="col s12 l4" data-aos='fade-up' data-aos-delay="100">
+                        <div class="row">
+                                    <img class="sponser-logo m-b-1" src="images/Daredevils logo-1.png" alt="">
+                        </div>
+                        <h5 class="p-t-1">Dabare Daredevils</h5>
+                        <p class="p-b-2">2014 Sc2</p>
+                    </div>
+                    <div class="col s12 l4" data-aos='fade-up' data-aos-delay="100">
+                        <div class="row">
+                                    <img class="sponser-logo m-b-1" src="images/Sunrisers logo-1.png" alt="">
+                        </div>
+                        <h5 class="p-t-1">Sriyani Sunrisers</h5>
+                        <p class="p-b-2">2014 Sc3</p>
+                    </div>  
+                    <div class="col s12 l4" data-aos='fade-up' data-aos-delay="100">
+                        <div class="row">
+                                    <img class="sponser-logo m-b-1" src="images/Warriers logo-1.png" alt="">
+                        </div>
+                        <h5 class="p-t-1">Boondala Warriers</h5>
+                        <p class="p-b-2">2014 Sc4</p>
+                    </div>
+                    <div class="col s12 l4" data-aos='fade-up' data-aos-delay="100">
+                        <div class="row">
+                                    <img class="sponser-logo m-b-1" src="images/Super Kings logo-1.png" alt="">
+                        </div>
+                        <h5 class="p-t-1">Manoja Super Kings</h5>
+                        <p class="p-b-2">2014 Sc5</p>
+                    </div>                                       
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- End About Section-->
+
+    <!-- Start Timeline Section-->
+    <section id="timeline" class="main-section center-align black-text" data-scroll-index="3">
+        <div class="container">
+            <h4 class="section-header m-t-3 p-b-2">Tournament Schedule</h4>
+            <div class="row m-t-3">
+                <div class="col s12 m12 l12">
+                    <div class="timeline">
+                        <div class="timeline-start"></div>
+                        <ul>
+                            <li class="effect1 theme-purple-light past-event" data-aos='fade-left' data-aos-delay="100">
+                                <h5>MATCH 1 (Court 1)</h5>
+                                <p>Knightriders Vs Daredevils</p>
+                                <h5>MATCH 2 (Court 2)</h5>
+                                <p>Warriers Vs Super Kings</p>
+                                <time>9:00-10:00<a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                        target="_blank"></a></time>
+                            </li>
+                            <li class="effect1 theme-pink" data-aos='fade-right' data-aos-delay="100">
+                                <h5>MATCH 3 (Court 1)</h5>
+                                <p>Daredevils Vs Warriers</p>
+                                <h5>MATCH 4 (Court 2)</h5>
+                                <p>Knightriders Vs Sunrisers</p>
+                                <time>10:00-11:00<a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                        target="_blank" href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20180924T183000Z%2F20180925T182900Z&text=%5BRealHack%5D%20Registration%20Close&location=&details=Hurry%20Up!%20Register%20Now%20%3A%20http%3A%2F%2Frealhack.lk"></a></time>
+                            </li>
+                            <li class="effect1 theme-pink" data-aos='fade-left' data-aos-delay="100">
+                                <h5>MATCH 5 (Court 1)</h5>
+                                <p>Knightriders Vs Super Kings</p>
+                                <h5>MATCH 6 (Court 2)</h5>
+                                <p>Daredevils Vs Sunrisers</p>
+                                <time>11:30-12:30<a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                    target="_blank" href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20180927T183000Z%2F20180928T182900Z&text=%5BRealHack%5D%20PreHack&location=&details=Ready%20to%20hack%20before%20RealHack!%20Chek%20Now%20for%20more%20info%3A%20http%3A%2F%2Frealhack.lk"></a></time>
+                            </li>
+                            <li class="effect1 theme-purple-light" data-aos='fade-right' data-aos-delay="100">
+                                <h5>MATCH 7 (Court 1)</h5>
+                                <p>Warriers Vs Sunrisers</p>
+                                <h5>MATCH 8 (Court 2)</h5>
+                                <p>Daredevils Vs Super Kings</p>
+                                <time>13:30-14:30<a class="="tooltipped" data-tooltip="Add to Google Calendar"
+                                    target="_blank" href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20181004T143000Z%2F20181004T143000Z&text=%5BRealHack%5D%20Shortlisted%20Teams&location=&details=Check%20your%20team%20name%20on%20the%20http%3A%2F%2Frealhack.lk"></a></time>
+                            </li>
+                            <li class="effect1 theme-purple-light" data-aos='fade-left' data-aos-delay="100">
+                                <h5>MATCH 9 (Court 1)</h5>
+                                <p>Sunrisers Vs Super Kings</p>
+                                <h5>MATCH 10 (Court 2)</h5>
+                                <p>Knightriders Vs Warriers</p>
+                                <time>14:30-15:30<a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                    target="_blank" href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20181015T030000Z%2F20181016T113000Z&text=%5BRealHack%5D%20Hackathon%20Day&location=&details=RealHack%20Hackathon%20Day.%20See%20winners%20at%20http%3A%2F%2Frealhack.lk"></a></time>
+                            </li>
+                            <li class="effect1 theme-pink" data-aos='fade-right' data-aos-delay="100">
+                                <h5>MATCH 11 (Court 1)</h5>
+                                <p>Final</p>
+                                <h5>MATCH 12 (Court 2)</h5>
+                                <p>3rd Place</p>
+                                <time>16:00-17:00</time>
+                            </li>
+                        </ul>
+                        <div class="timeline-end"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Timeline Section-->
+
+    <!-- Start Footer Section-->
+    <section id="footer" data-scroll-index="7" class="main-section gradientBackground center-align ">
+        <!-- Footer Area -->
+        <div class="footer-content p-t-3 left-align" data-aos='fade'  >
+            <div class="container">
+                <div class="row">
+                    <center>
+                    <div class="about col s12 m6 l4 m-b-2">
+                        <h5 class="p-b-1"></h5>
+                        <img class="responsive-img logo" src="./images/logo-top.png" alt="logo image">
+                        <br>
+                        <p></p>
+                    </div>
+                         <div class="tags col s12 m6 l4 m-b-2">
+                          <h5 class="p-b-1">Socail Media</h5>
+                            <div class="social-media">
+                             <a href="https://www.facebook.com/%E0%B6%85%E0%B6%B1%E0%B7%8A%E0%B6%B1-%E0%B7%83%E0%B7%99%E0%B6%B1%E0%B6%BB%E0%B6%AD%E0%B7%8A-Memorial-Champions-Trophy-720197904717443/?eid=ARAG2BwjO-oc6_lyP5VtFgQD3myJh8o92MoTcA4jhRq-Mf9bVXqdi6Zy97RWRzhhaDY52uofeO3lbXVL" target="_blank"><i class="fab fa-3x fa-facebook"></i></a>
+                            </div>
+                        </div>                      
+                    </center>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End Footer Section-->
+
+    <!-- Start Copy Rights Section-->
+
+    <!-- End Copy Rights Section-->
+
+    <!-- Start Modals Section -->
+
+    <!-- End Modals Section -->
+
+    <!-- Clock Template -->
+    <script type="text/template" id="clock-template">
+        <div class="time <%= label %>">
+            <span class="count curr top"><%= curr %></span>
+            <span class="count next top"><%= next %></span>
+            <span class="count next bottom"><%= next %></span>
+            <span class="count curr bottom"><%= curr %></span>
+            <span class="label"><%= label %></span>
+        </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="js/morphext.min.js"></script>
+    <script src="https://uokse.github.io/realhack/stat.js"></script>
+    <script src="js/main_new_1.min.js"></script>
+    <script>
+        
+        $('.showonTime').hide();
+        var a = "09/26/2018 0:01 AM";
+        var aDate = new Date(a).getTime();
+        var bDate = new Date(Date.now()).getTime();
+        if(bDate>aDate){
+ 
+            $('.showonTime').show();
+            $('.hideonTime').hide();
+            $('.regbtn').attr('href','');
+        }
+
+    </script>
+
+</body>
+
+</html>
