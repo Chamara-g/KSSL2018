@@ -164,6 +164,7 @@
                     <h5>At University Park</h5>
                     <div id="count-clock" class="hideonTime count-clock"></div>
                     <div class='showonTime' ><span style="color: #880e4f;font-size: 28px;font-weight: bold;">12th Edition of King's Science Super League</span> <span><br></span></div>
+                    <p id="demo" style="color: #3294a8;font-size: 35px;font-weight: bold;></p>
                 
                     <!-- <p class="desc organizer">
                         <img src="images/ieeeuok-logo.png" />
@@ -175,6 +176,7 @@
                 <div style="text-align: center">
                         <h3 class="">Let the <span id="js-rotating" class="text-red">Battle</span>
                             <br>Begin!!</h3><br>
+
                 </div>
                 
                 <a data-scroll-nav="5"  class="hideonTime regbtn theme-red trans-05"></a>
@@ -328,6 +330,39 @@
     <!-- Start Modals Section -->
 
     <!-- End Modals Section -->
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 30, 2018 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 
     <!-- Clock Template -->
     <script type="text/template" id="clock-template">
